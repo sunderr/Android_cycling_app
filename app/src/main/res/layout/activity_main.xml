@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <Button android:text="STOP" android:id="@+id/stop_button"
+        android:layout_height="160dp" android:background="#f00"
+        android:layout_width="match_parent"
+        android:gravity="center" android:textColor="#000"></Button>
+    <Button android:text="GO FAST" android:id="@+id/fast_button"
+        android:layout_height="160dp" android:layout_width="match_parent"
+        android:background="#0f0" android:gravity="center"
+        android:textColor="#000"></Button>
+    <Button android:text="SLOW DOWN" android:id="@+id/slow_button"
+        android:layout_height="160dp" android:layout_width="match_parent"
+        android:background="#00f" android:gravity="center"
+        android:textColor="#000"></Button>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/phone_number" />
+
+</LinearLayout>

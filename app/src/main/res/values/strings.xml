@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">cycling_using_sms</string>
+    <string name="action_settings">Settings</string>
+    <string name="stop_button">stop_button</string>
+    <string name="fast_button">fast_button</string>
+    <string name="slow_button">slow_button</string>
+    <string name="message_button">Message</string>
+    <string name="title_activity_avtivity_flash_message">Avtivity_flash_message</string>
+    <string name="title_activity_phone_contacts">phone_contacts</string>
+</resources>
