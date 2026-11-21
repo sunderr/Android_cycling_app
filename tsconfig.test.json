@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "outDir": ".test-build",
+    "types": ["node"]
+  },
+  "include": ["src/engine/**/*.ts", "src/data/**/*.ts", "src/types.ts", "tests/**/*.ts"]
+}
