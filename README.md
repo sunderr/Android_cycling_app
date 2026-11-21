@@ -20,7 +20,38 @@ npm test              # personalization engine unit tests
 npm run typecheck
 ```
 
-Store builds (no Mac/Android Studio needed): `npx eas-cli@latest build --platform all`.
+## Install on your own phones
+
+No Mac, Xcode or Android Studio needed: builds run in Expo's cloud (EAS).
+
+```bash
+npm install -g eas-cli
+eas login                 # free Expo account
+eas init                  # links this project to your Expo account
+```
+
+**Android (APK you install directly):**
+```bash
+eas build --platform android --profile preview
+```
+Open the link it prints on your Android phone, download the APK, and allow "install unknown apps".
+
+**iPhone (TestFlight, recommended):**
+```bash
+eas build --platform ios --profile production --auto-submit
+```
+Sign in with your Apple Developer account when asked. After Apple processes the build
+(~10–30 min) install the **TestFlight** app on your iPhone and open FitGuide from there.
+
+**iPhone (direct install, alternative):**
+```bash
+eas device:create         # register your iPhone (open the link on the phone)
+eas build --platform ios --profile preview
+```
+Turn on Settings → Privacy & Security → Developer Mode, then open the build link on the phone.
+
+**Publish to the stores:** `eas build --platform all --profile production` then
+`eas submit --platform android` / `eas submit --platform ios`.
 
 ## How personalization works
 
